@@ -2,11 +2,12 @@
   width: 100%;
   position: fixed;
   height: fit-content;
-  box-shadow: 0 0 18px 4px #8d8c8b3b;
+  box-shadow: 0 0 28px 2px #4c505434;
   background-color: rgb(255, 255, 255);
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
+  z-index: 8;
 }
 .logo {
   flex-grow: 1;
@@ -14,12 +15,12 @@
   text-align: justify;
   margin: 0 1rem;
   margin-top: 0.3rem;
-  color: #47350e;
+  color: #fb872b;
 }
 .Navbar ul {
   list-style: none;
   display: flex;
-  background-color: #ffb8203b;
+  background-color: #fb892b4f;
   padding: 0.3rem 1rem;
   border-radius: 10rem;
 }
@@ -30,7 +31,7 @@
   width: 22px;
 }
 .cartItemCount {
-  background-color: #ffb820;
+  background-color: #fb892bc7;
   color: #47350e;
   font-weight: 600;
   padding: 0 0.6rem;

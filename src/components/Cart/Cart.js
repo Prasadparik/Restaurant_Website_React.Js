@@ -29,17 +29,45 @@ function Cart({ cartToggle }) {
   return (
     <Modal>
       {MealList}
+      {cartCtx.items.length < 1 ? (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            marginTop: "5rem",
+          }}
+        >
+          <h1 style={{ textAlign: "center", margin: "1rem 0" }}>
+            Your Cart is Empty!
+          </h1>
 
-      <div className={classes.total}>
-        <span>Total Amount</span>
-        <span>$ {cartCtx.totalAmount}</span>
-      </div>
-      <div className={classes.actions}>
-        <button className={classes["button--alt"]} onClick={cartToggle}>
-          Close
-        </button>
-        <button className={classes.button}>Order</button>
-      </div>
+          <button
+            style={{
+              textAlign: "center",
+              padding: "0.5rem 1rem",
+              background: "#fb872b",
+              border: "none",
+            }}
+            onClick={cartToggle}
+          >
+            Close
+          </button>
+        </div>
+      ) : (
+        <div className={classes.TotalWrapper}>
+          <div className={classes.total}>
+            <span>Total Amount</span>
+            <span>$ {cartCtx.totalAmount}</span>
+          </div>
+          <div className={classes.actions}>
+            <button className={classes["button--alt"]} onClick={cartToggle}>
+              Close
+            </button>
+            <button className={classes.button}>Order</button>
+          </div>
+        </div>
+      )}
     </Modal>
   );
 }

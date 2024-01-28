@@ -1,0 +1,66 @@
+.swiggy-footer {
+  background-color: #02060c;
+  color: #fff;
+  padding: 40px 0;
+  padding-top: 4rem;
+  border-top: 6px solid #ff8d79;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fbf5f5;
+  font-size: 14px;
+}
+
+ul li a:hover {
+  color: #e84d32;
+}
+
+.social-link {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.app-download {
+  text-align: center;
+}
+
+.app-link img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+  }
+
+  .app-download {
+    margin-top: 20px;
+  }
+}

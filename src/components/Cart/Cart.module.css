@@ -14,6 +14,11 @@
   font-size: 1.5rem;
   margin: 1rem 0;
 }
+.TotalWrapper {
+  padding: 1rem;
+  box-shadow: 0 0 12px 2px #eee;
+  border-radius: 0.2rem;
+}
 
 .actions {
   text-align: right;
@@ -23,7 +28,7 @@
   font: inherit;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid rgb(174, 126, 5);
+  border: 1px solid #fb872b;
   padding: 0.5rem 2rem;
   border-radius: 25px;
   margin-left: 1rem;
@@ -31,17 +36,17 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: rgb(138, 101, 6);
-  border-color: rgb(174, 126, 5);
+  background-color: #ed7c31c7;
+  border-color: #ed7d31;
   color: white;
 }
 
 .actions .button--alt {
-  color: rgb(174, 126, 5);
+  color: #ed7d31;
 }
 
 .actions .button {
-  background-color: rgb(174, 126, 5);
+  background-color: #ed7d31;
   color: white;
 }
 

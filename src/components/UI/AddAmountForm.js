@@ -20,6 +20,7 @@ function AddAmountForm({ FoodList, item, i }) {
   const RemoveItemInCartHandler = (e, newItem, i) => {
     e.preventDefault();
     const updatedFoodList = [...FoodList];
+    // updatedFoodList[i].amount -= 1;
 
     cartCtx.removeItem({
       ...newItem,

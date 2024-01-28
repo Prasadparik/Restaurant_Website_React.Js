@@ -47,9 +47,9 @@ function FoodItemsList() {
               <li>
                 <b>$ {item.price}</b>
               </li>
-              <li>
+              {/* <li>
                 <span>Amount: {item.amount}</span>
-              </li>
+              </li> */}
             </ul>
             <AddAmountForm FoodList={FoodList} item={item} i={i} />
           </div>
